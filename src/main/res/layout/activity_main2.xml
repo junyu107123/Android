@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/tall"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/weight"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="7dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="413dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="382dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/buttonbmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="272dp"
+        android:layout_toStartOf="@+id/buttonclear"
+        android:text="開始計算" />
+
+    <Button
+        android:id="@+id/buttonclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="272dp"
+        android:text="清除" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="533dp"
+        android:text="BMI計算機"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toStartOf="@+id/tall"
+        android:text="身高(公分)" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="428dp"
+        android:layout_toStartOf="@+id/weight"
+        android:text="體重(公斤)" />
+
+    <Button
+        android:id="@+id/tocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="186dp"
+        android:text="簡易計算機"
+        android:onClick="tocal"
+        />
+</RelativeLayout>
